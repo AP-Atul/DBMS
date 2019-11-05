@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>JSON Array</title>
+
+    <script lang="javascript">
+        var books = {
+            "Pascal" : [
+                {
+                    "name": "Pascal Made Easy",
+                    "author": "Someone"
+                },
+                {
+                    "name": "Pascal For Dummies",
+                    "author": "Someone"
+                }
+            ],
+            "Java" : [
+                {
+                    "name": "Java Made Easy",
+                    "author": "Someone"
+                },
+                {
+                    "name": "Java For Dummies",
+                    "author": "Someone"
+                }
+            ]
+        }
+
+        var i = 0;
+        document.writeln("<table width = 200 border = 1>");
+        document.writeln("<tr> <th>Name</th> <th>Author</th></tr>");
+        for(i = 0; i < books.Pascal.length; i++){
+            document.writeln("<tr><td>" + books.Pascal[i].name + "</td>");
+            document.writeln("<td>" + books.Pascal[i].author + "</td></tr>");
+        }
+
+        for(i = 0; i < books.Java.length; i++){
+            document.writeln("<tr><td>" + books.Java[i].name + "</td>");
+            document.writeln("<td>" + books.Java[i].author + "</td></tr>");
+        }
+
+        document.writeln("</table>");
+    </script>
+
+</head>
+<body>
+</body>
+</html>
